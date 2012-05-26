@@ -1,29 +1,17 @@
 {
-    "title": "JavaScript - not only for Java Developers",
+    "title": "About Nerdshow",
     "author": "Heinrich Göbl",
     "company": "www.goebl.com",
-    "footer_left": "pro-js.com",
-    "footer_right": "hgoebl &#8226; 16.01.2012",
+    "footer_left": "--no footer--",
+    "footer_right": "hgoebl &#8226; 26.05.2012",
     "theme": "advanced",
-    "transitions": "no",
+    "transitions": "yes",
     "source": [
-        "00-javascript-for-javadev.md",
-        "05-intro.md",
-        "10-basics.md",
-        "20-functions.md",
-        "30-advanced.md",
-        "40-prototypal-inheritance.md",
-        "41-prototypal-1.html",
-        "60-pitfalls.md",
-        "65-tools.md",
-        "70-for-java-developers.md",
-        "80-weird.md",
-        "90-conclusions.md",
-        "95-reading.md",
+        "00-about-nerdshow.md",
         "99-end.md"
     ],
     "sourceEncoding": "utf8",
-    "template": "../../s5/s5-template.html",
-    "s5-res-folder": "/nerdshow/s5",
-    "destination": "presentation.html"
+    "template": "s5",
+    "nerdshow-folder": "/nerdshow",
+    "destination": "index.html"
 }
