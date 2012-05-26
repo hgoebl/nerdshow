@@ -1,0 +1,59 @@
+@mixin absolute($z) {
+  z-index: $z;
+  position: absolute;
+}
+
+@mixin topleft($z) {
+  @include absolute($z);
+  top: 0;
+  left: 0;
+}
+
+@mixin topright($z) {
+  @include absolute($z);
+  top: 0;
+  right: 0;
+}
+
+@mixin bottomleft($z) {
+  @include absolute($z);
+  bottom: 0;
+  left: 0;
+}
+
+@mixin bottomright($z) {
+  @include absolute($z);
+  bottom: 0;
+  right: 0;
+}
+
+@mixin top($z) {
+  @include topleft($z);
+  width: 100%;
+}
+
+@mixin bottom($z) {
+  @include bottomleft($z);
+  width: 100%;
+}
+
+@mixin theme-loaded($mode) {
+  $themeLoadedWidth: 42px;
+  #themeLoaded {
+    // 42px width means loaded
+    width: 42px;
+    // 42px height means projection mode
+    @if $mode == "Projection" {
+      height: 42px;
+    }
+    @else {
+      height: 27px;
+    }
+  }
+}
+
+@mixin link-color($color) {
+  a, a:link, a:hover, a:active, a:visited {
+    color: $color;
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "nerdshow",
+    "version": "0.1.0",
+    "author": "Heinrich Göbl <hgoebl@goebl.com> (http://goebl.com/)",
+    "description": "Presentation software for nerds with remote control",
+    "keywords": ["slideshow", "presentation", "markdown", "html", "mobile", "rc"],
+    "homepage": "https://github.com/hgoebl/nerdshow",
+    "licenses":[{
+        "type":"MIT",
+        "url": "http://github.com/hgoebl/nerdshow/raw/master/LICENSE"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/hgoebl/nerdshow.git"
+    },
+    "dependencies": {
+        "optimist": ">= 0.3.0",
+        "marked": ">= 0.1.6",
+        "mustache": ">= 0.4.0",
+        "jsdom": ">= 0.2.14",
+        "express": ">= 2.5.x",
+        "socket.io": ">= 0.9.6"
+    },
+    "devDependencies": {
+    },
+    "engines": {
+        "node": ">= 0.6.x"
+    },
+    "main": "./server.js",
+    "bin": "./bin/nerdshow-run"
+}

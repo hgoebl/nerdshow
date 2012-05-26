@@ -1,0 +1,17 @@
+@import "reset.scss";
+@import "util.scss";
+@import "controls.scss";
+@import "layout.scss";
+
+@mixin projection-theme {
+  @include global-reset;
+  @include slideshow-layout;
+  @include controls;
+  @include theme-loaded("Projection");
+}
+
+@mixin outline-theme {
+  @include outline-layout;
+  @include controls;
+  @include theme-loaded("Outline");
+}
