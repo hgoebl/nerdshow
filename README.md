@@ -5,6 +5,7 @@ Generate HTML presentations, serve presentation files and control presentation w
  * create your presentation by editing Markdown and/or HTML snippets
  * Syntax highlighting (by now only for JavaScript)
  * remote control your presentation with your smartphone
+ * share a presentation across many browser instances (on distributed PCs)
 
 **Not for:**
  * Internet Explorer users (please use a real browser like e.g. Chrome, Safari, Firefox, ...)
@@ -54,12 +55,18 @@ file system. If you put them in one location, I would install it locally, if not
 ## TODO / Bugs
 
   * When zooming (Ctrl+Click Source-Code) all images disappear (background + img)
+  * HowTo documentation + enhance example
   * Provide a boilerplate/template for new presentation (nerdshow-create)
   * Implement/Test incremental page updates (ul/li elements coming item by item)
+  * Switch to Full-Screen-Mode when presentation starts (or when pressing F5)
+  * Place a loading div hiding all slides
+  * Isolate different presentations delivered by the same server
+  * Generate a QR-Code for the remote control URL
   * Add support for SyntaxHighlighter (from Alex Gorbatschev)
   * Output error message when used with IE <= 9
   * Write some test code
   * Generate impress.js Slides (Positioning slides along paths/patterns)
+  * Provide CSS for print (showing all slides and div.class='handout'
 
 ## License
 
@@ -69,7 +76,7 @@ MIT (see LICENSE file)
 
   * S5 Presentation `diascope` Original Source comes from [minad/diascope](https://github.com/minad/diascope)
   * JavaScript Syntax Highlighter `hijs` from [cloudhead](http://cloudhead.io/)
-  * See package.json (marked, express, socket-io, optimist)
+  * See package.json (marked, express, socket-io, optimist, mustache, jsdom)
   * jQuery and jQuery Mobile
 
 ## See also
