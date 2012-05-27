@@ -20,6 +20,6 @@
 <br/>
 <br/>
 
- * **<https://www.goebl.com>**
+ * **<http://www.goebl.com>**
 
 .</div>

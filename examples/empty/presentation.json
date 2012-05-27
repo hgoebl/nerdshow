@@ -1,0 +1,16 @@
+{
+    "title": "My Title",
+    "author": "My Name",
+    "company": "My Company",
+    "footer_left": "--no footer--",
+    "footer_right": "--no footer--",
+    "theme": "advanced",
+    "transitions": "yes",
+    "source": [
+        "00-start.md"
+    ],
+    "sourceEncoding": "utf8",
+    "template": "s5",
+    "nerdshow-folder": "/nerdshow",
+    "destination": "index.html"
+}

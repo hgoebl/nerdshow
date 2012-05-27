@@ -1,13 +1,3 @@
-```text
-                      ___ _       _      _              _
-             _       / __|_)     (_)    | |            | |
- ____   ___ | |_    | |__ _ ____  _  ___| | _   ____ _ | |
-|  _ \ / _ \|  _)   |  __) |  _ \| |/___) || \ / _  ) || |
-| | | | |_| | |__   | |  | | | | | |___ | | | ( (/ ( (_| |
-|_| |_|\___/ \___)  |_|  |_|_| |_|_(___/|_| |_|\____)____|
-
-```
-
 # nerdshow
 
 Generate HTML presentations, serve presentation files and control presentation with mobile device.
@@ -25,16 +15,32 @@ This tool will probably only be used by nerds and the presentations will be for 
 
 ## Generate Presentations
 
-TODO
+ * Copy examples/empty to local folder
+ * Edit presentation.json
+ * add Markdown and/or html files and add them to presentation.json (slides array)
+ * Markdown extension: insert raw html by placing '.' in the first column, e.g. `.</div><div class="slide">`
+ * Run generator `nerdshow-generate presentation.json`
+ * Run presentation `nerdshow . --debug`
+ * Open a html5 browser <http://localhost:8008/>
+ * Open remote control <http://localhost:8008/nerdshow/rc/remote.html>
 
 ## Usage
 
+### Run Generator
+
 ```
-Usage: node ./bin/nerdshow-generate [options]
+Usage: nerdshow-generate <path/to/presentation.json>
+```
+
+### Run Presentation
+
+```
+Usage: nerdshow path/to/presentation [options]
 
 Options:
-  --encoding, -e  character-set of stdin input                 [default: "utf8"]
-  --debug         output for easier debugging                  [default: false]
+  --port          TCP port of web server        [default: "8008"]
+  --encoding, -e  character-set of stdin input  [default: "utf8"]
+  --debug         output for easier debugging   [default: false]
   --help, -h      show help and exit
 ```
 
@@ -48,6 +54,10 @@ file system. If you put them in one location, I would install it locally, if not
 ## TODO / Bugs
 
   * When zooming (Ctrl+Click Source-Code) all images disappear (background + img)
+  * Provide a boilerplate/template for new presentation (nerdshow-create)
+  * Implement/Test incremental page updates (ul/li elements coming item by item)
+  * Add support for SyntaxHighlighter (from Alex Gorbatschev)
+  * Output error message when used with IE <= 9
   * Write some test code
   * Generate impress.js Slides (Positioning slides along paths/patterns)
 

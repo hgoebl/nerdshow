@@ -1,6 +1,6 @@
 {
     "name": "nerdshow",
-    "version": "0.1.0",
+    "version": "0.1.0-beta",
     "author": "Heinrich Göbl <hgoebl@goebl.com> (http://goebl.com/)",
     "description": "Presentation software for nerds with smartphone remote control",
     "keywords": ["slideshow", "presentation", "markdown", "html", "mobile", "rc"],
@@ -22,10 +22,18 @@
         "socket.io": ">= 0.9.6"
     },
     "devDependencies": {
+        "jshint": "*"
     },
     "engines": {
         "node": ">= 0.6.x"
     },
     "main": "./server.js",
-    "bin": "./bin/nerdshow-run"
+    "scripts": {
+        "pretest": "jshint *"
+    },
+    "bin": {
+        "nerdshow": "./bin/nerdshow-run",
+        "nerdshow-generate": "./bin/nerdshow-generate"
+    },
+    "preferGlobal": true
 }
