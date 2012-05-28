@@ -8,7 +8,7 @@
 
 #### <https://github.com/hgoebl/nerdshow>
 
-.</div><div class="slide" style="">
+.</div><div class="slide">
 
 # About me
 

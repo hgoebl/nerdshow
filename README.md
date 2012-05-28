@@ -14,6 +14,19 @@ Generate HTML presentations, serve presentation files and control presentation w
 
 This tool will probably only be used by nerds and the presentations will be for nerds ==> nerdshow!
 
+## Demo
+
+### Slides
+
+ * <http://hgoebl.github.com/nerdshow>
+
+### Remote Control
+
+The remote control software only works when pages are served by node.js. In this demo you can see only the
+mobile application. It is not connected with a presentation.
+
+ * <http://hgoebl.github.com/nerdshow/rt/rc/remote.html?/nerdshow>
+
 ## Generate Presentations
 
  * Copy examples/empty to local folder
@@ -30,7 +43,12 @@ This tool will probably only be used by nerds and the presentations will be for 
 ### Run Generator
 
 ```
-Usage: nerdshow-generate <path/to/presentation.json>
+Usage: nerdshow-generate <path/to/presentation.json> [options]
+
+Options:
+  --nerdshow-folder   base url for nerdshow runtime      [default: "/nerdshow"]
+  --socketio-enabled  disable socket-io for static html  [default: true]
+  --help, -h          show help and exit
 ```
 
 ### Run Presentation
@@ -45,9 +63,11 @@ Options:
   --help, -h      show help and exit
 ```
 
+If you run 'nerdshow' w/out a path to a presentation folder, it will serve the examples folder: <http://localhost:8008/>
+
 ## Installation
 
-You can install `nerdshow` locally or globally. This depends how much your presentations are spread across your
+You can install `nerdshow` locally or globally. This depends on how much your presentations are spread across your
 file system. If you put them in one location, I would install it locally, if not, then globally (add option `-g`):
 
     npm install nerdshow [-g]

@@ -61,6 +61,7 @@
     {{{slides}}}
 
 </div>
+{{#hijs-enabled}}
 <script src="{{nerdshow-folder}}/hijs/hijs.js"></script>
 <script>
 
@@ -69,6 +70,8 @@
     });
 
 </script>
+{{/hijs-enabled}}
+{{#zoom-enabled}}
 <script src="{{nerdshow-folder}}/zoom/zoom.js"></script>
 <script>
 
@@ -82,12 +85,14 @@
     });
 
 </script>
+{{/zoom-enabled}}
+{{#socketio-enabled}}
 <script src="/socket.io/socket.io.js" type="text/javascript"></script>
 <script type="text/javascript">
 
     $(function () {
         if (typeof io === 'undefined') {
-            return; // no connection to socket.io
+            return; // socket.io not loaded
         }
         var socket = io.connect();
         socket.on('jump', function (data) {
@@ -101,5 +106,6 @@
     });
 
 </script>
+{{/socketio-enabled}}
 </body>
 </html>

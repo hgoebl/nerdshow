@@ -13,5 +13,8 @@
     "sourceEncoding": "utf8",
     "template": "s5",
     "nerdshow-folder": "/nerdshow",
+    "socketio-enabled": true,
+    "zoom-enabled": false,
+    "hijs-enabled": true,
     "destination": "index.html"
 }

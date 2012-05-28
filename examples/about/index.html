@@ -57,13 +57,11 @@
 </div>
 <div class="presentation">
     <div class="slide">
-
 <h1>Nerdshow</h1>
 <h2>HTML-based presentation for Nerds</h2>
 <h3>Heinrich Göbl</h3>
 <h4><a href="https://github.com/hgoebl/nerdshow">https://github.com/hgoebl/nerdshow</a></h4>
-</div><div class="slide" style="">
-
+</div><div class="slide">
 <h1>About me</h1>
 <ul>
 <li>Heinrich Göbl</li>
@@ -73,21 +71,16 @@
 </ul>
 <p><br/>
 <br/>
-
 </p>
 <ul>
-<li><strong><a href="https://www.goebl.com">https://www.goebl.com</a></strong></li>
+<li><strong><a href="http://www.goebl.com">http://www.goebl.com</a></strong></li>
 </ul>
 </div>
-
 <div class="slide">
-
 <h1>Questions?</h1>
 <p><img src="media/questions.jpg" class="scaled-centered">
-
 </p>
 </div>
-
 </div>
 <script src="/nerdshow/hijs/hijs.js"></script>
 <script>
@@ -95,22 +88,11 @@
         $('<link rel="stylesheet" type="text/css" href="/nerdshow/hijs/my-hijs.css"/>').appendTo('head');
     });
 </script>
-<script src="/nerdshow/zoom/zoom.js"></script>
-<script>
-    $(function () {
-        $('pre code').click(function (event) {
-            if (event.ctrlKey) {
-                event.stopPropagation();
-                zoom.in({ element: this });
-            }
-        });
-    });
-</script>
 <script src="/socket.io/socket.io.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(function () {
         if (typeof io === 'undefined') {
-            return; // no connection to socket.io
+            return; // socket.io not loaded
         }
         var socket = io.connect();
         socket.on('jump', function (data) {
