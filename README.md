@@ -48,8 +48,12 @@ Usage: nerdshow-generate <path/to/presentation.json> [options]
 Options:
   --nerdshow-folder   base url for nerdshow runtime      [default: "/nerdshow"]
   --socketio-enabled  disable socket-io for static html  [default: true]
+  --hijs-enabled      highlight code as javascript       [default: true]
+  --zoom-enabled      enable zoom.js (Ctrl+Click)        [default: false]
   --help, -h          show help and exit
 ```
+
+To disable an option, enter `--no-<option>`, e.g. `--no-socketio-enabled`.
 
 ### Run Presentation
 

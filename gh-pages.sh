@@ -13,5 +13,5 @@ nerdshow-generate examples/about/presentation.json
 
 # copy / update runtime
 mkdir -p $DEST/$RT
-cp -r lib/server/htdocs/* $DEST/$RT/
+cp -ru lib/server/htdocs/* $DEST/$RT/
 

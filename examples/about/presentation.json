@@ -8,6 +8,8 @@
     "transitions": "yes",
     "source": [
         "00-about-nerdshow.md",
+        "10-sample-slides.md",
+        "20-sample-html.html",
         "99-end.md"
     ],
     "sourceEncoding": "utf8",
