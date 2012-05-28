@@ -1,0 +1,35 @@
+@import "../common/common.scss";
+
+@include projection-theme;
+
+@include link-color(#ff9933);
+
+body {
+  background: black;
+  color: white;
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.slide {
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  top: 20%;
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: -1.5em;
+    display: inline;
+    position: absolute;
+    border-bottom: 0.1em solid red;
+    white-space: nowrap;
+    padding-bottom: 0.1em;
+  }
+  .current {
+    color: yellow;
+  }
+}
+
+#slide1 > h1 {
+  font-size: 2em;
+  margin-top: 1em;
+  padding-bottom: 0.2em;
+}

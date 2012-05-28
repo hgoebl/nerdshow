@@ -1,0 +1,8 @@
+@import "../common/common.scss";
+
+@include outline-theme;
+
+body {
+  background: white;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
