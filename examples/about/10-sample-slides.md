@@ -85,7 +85,7 @@ var obj = {
 
 .</div><div class="slide">
 
-# Centered Image (Source)
+# Centered Image
 
 <img src="media/questions.jpg" class="scaled-centered">
 
