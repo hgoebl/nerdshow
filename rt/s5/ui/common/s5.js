@@ -14,6 +14,9 @@
         currentHash = location.hash,
         path = null,
         transitions = false,
+        mobileAndTouch,
+        slideDurations = [],
+        startTime = new Date().getTime(),
         eventCreator = Math.round(Math.random() * Math.pow(2, 16)).toString(36); // hgoebl
 
     function log(text) {
@@ -55,7 +58,25 @@
         return false;
     }
 
+    function trackTime() {
+        var now = new Date().getTime(),
+            duration = now - startTime;
+        slideDurations[currentSlide] = (slideDurations[currentSlide] || 0) + duration;
+        startTime = now;
+    }
+
+    function logTime() {
+        var sum = 0;
+        $('.slide').each(function (i) {
+            var slide = i + 1, duration = Math.round((slideDurations[slide] || 0) / 1000);
+            log('' + slide + ': ' + duration + ' [' + $('h1,h2,h3,h4,h5,h6', this).first().text() + ']');
+            sum += duration;
+        });
+        log('all: ' + sum + 'sec (' + (sum/60).toFixed(1) + 'min)');
+    }
+
     function setSlide(slide, backward) {
+        trackTime();
         currentSlide = slide;
         currentStep = backward ? incrementals[currentSlide - 1].length : 0;
         $('#slideList').val(slide);
@@ -210,6 +231,9 @@
             case 67: // c
                 toggleControls();
                 break;
+            case 84: // t
+                logTime();
+                break;
         }
         return false;
     }
@@ -335,15 +359,29 @@
         transitions = $('meta[name=transitions]').attr('content') === 'yes';
         fadeDuration = parseInt($('meta[name=fadeDuration]').attr('content') || fadeDuration, 10);
         incrDuration = parseInt($('meta[name=incrDuration]').attr('content') || incrDuration, 10);
+        mobileAndTouch = /android|bada|blackberry|iemobile|ip(hone|od)|opera m(ob|in)i|windows phone/i.
+            test(navigator.userAgent || navigator.vendor || window.opera)
+            && ('ontouchstart' in document.documentElement);
 
         initSlides();
         initTheme();
         initControls();
 
-        $(document).keyup(keyup).click(function (event) {
-            var n = event.target.nodeName.toLowerCase();
-            return event.button !== 0 || n === 'a' || n === 'select' || n === 'button' || n === 'option' ? true : next();
-        });
+        $(document).keyup(keyup);
+
+        if (mobileAndTouch) {
+            $(document).click(function (event) {
+                var n = event.target.nodeName.toLowerCase();
+                return event.button !== 0 || n === 'a' || n === 'select' || n === 'button' || n === 'option' ? true : next();
+            });
+        } else {
+            $(document).click(function (event) {
+                // non-mobile browsers: only a left-mouse-click in the header jumps to the next page
+                var header = $('div#header').get(0);
+                return event.button === 0 && event.target === header ? next() : true;
+            });
+        }
+
         $(window).resize(rescale);
         checkHash();
 

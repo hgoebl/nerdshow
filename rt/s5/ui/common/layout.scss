@@ -56,6 +56,7 @@
       margin-left: 2em;
       font-size: 90%;
       list-style-type: square;
+      margin-top: 0.5em;
       ul {
         list-style-type: circle;
       }
@@ -79,10 +80,12 @@
   a, a:link, a:hover, a:active, a:visited {
     text-decoration: none;
   }
+  /*
   a[href^=http]:after {
     content: " \274F";
     font-size: smaller;
   }
+  */
 }
 
 @mixin outline-layout {

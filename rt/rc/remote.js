@@ -30,8 +30,8 @@
             $('#slides')
                 .empty()
                 .append(data.map(function (el, index) {
-                return '<option value="' + (index + 1) + '">' + el + '</option>';
-            }).join(''))
+                    return '<option value="' + (index + 1) + '">' + el + '</option>';
+                }).join(''))
                 .selectmenu('refresh');
 
             callback(null);
