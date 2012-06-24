@@ -49,6 +49,7 @@ Options:
   --nerdshow-folder   base url for nerdshow runtime      [default: "/nerdshow"]
   --socketio-enabled  disable socket-io for static html  [default: true]
   --hijs-enabled      highlight code as javascript       [default: true]
+  --jquery            jquery url (if not online)         [default: "http://code.jquery.com/jquery-1.7.1.min.js"]
   --zoom-enabled      enable zoom.js (Ctrl+Click)        [default: false]
   --help, -h          show help and exit
 ```
@@ -100,7 +101,7 @@ MIT (see LICENSE file)
 
   * S5 Presentation `diascope` Original Source comes from [minad/diascope](https://github.com/minad/diascope)
   * JavaScript Syntax Highlighter `hijs` from [cloudhead](http://cloudhead.io/)
-  * See package.json (marked, express, socket-io, optimist, mustache, jsdom)
+  * See package.json (marked, express, socket-io, optimist, mote, jsdom)
   * jQuery and jQuery Mobile
 
 ## See also
