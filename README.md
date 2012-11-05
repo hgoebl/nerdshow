@@ -7,9 +7,6 @@ Generate HTML presentations, serve presentation files and control presentation w
  * remote control your presentation with your smartphone
  * share a presentation across many browser instances (on distributed PCs)
 
-**Not for:**
- * Internet Explorer users (please use a real browser like e.g. Chrome, Safari, Firefox, ...)
-
 ## The name?
 
 This tool will probably only be used by nerds and the presentations will be for nerds ==> nerdshow!
@@ -92,6 +89,7 @@ file system. If you put them in one location, I would install it locally, if not
   * Write some test code
   * Generate impress.js Slides (Positioning slides along paths/patterns)
   * Provide CSS for print (showing all slides and div.class='handout'
+  * Upgrade to Express 3.x
 
 ## License
 
