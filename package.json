@@ -1,6 +1,6 @@
 {
     "name": "nerdshow",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "author": "Heinrich Göbl <hgoebl@goebl.com> (http://goebl.com/)",
     "description": "Presentation software for nerds with smartphone remote control",
     "keywords": ["slideshow", "presentation", "markdown", "html", "mobile", "rc"],

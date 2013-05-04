@@ -81,7 +81,6 @@ file system. If you put them in one location, I would install it locally, if not
   * Provide a boilerplate/template for new presentation (nerdshow-create)
   * Implement/Test incremental page updates (ul/li elements coming item by item)
   * Switch to Full-Screen-Mode when presentation starts (or when pressing F5)
-  * Place a loading div hiding all slides
   * Isolate different presentations delivered by the same server
   * Generate a QR-Code for the remote control URL
   * Add support for SyntaxHighlighter (from Alex Gorbatschev)
