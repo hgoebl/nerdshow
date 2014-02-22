@@ -9,8 +9,6 @@
     <meta name="company" content="www.goebl.com"/>
     <!-- extensions -->
     <meta name="transitions" content="yes"/>
-    <script src="/nerdshow/jquery/jquery-1.7.1.min.js" type="text/javascript"></script>
-    <script src="/nerdshow/s5/ui/common/s5.js" type="text/javascript"></script>
     <link rel="stylesheet" href="/nerdshow/s5/ui/advanced/theme.css" type="text/css" title="advanced" media="screen"/>
     <style>
         img.scaled-centered {
@@ -41,9 +39,22 @@
             color: #339;
             background: #d0dafd;
         }
+        #loading {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-image: url('/nerdshow/s5/ui/default/preloaders.gif');
+            background-repeat:no-repeat;
+            background-position: center center;
+        }
+        .presentation {
+            display: none;
+        }
     </style>
 </head>
 <body>
+<div id="loading"></div>
 <div class="layout">
     <div id="header"></div>
     <!-- div id="footer">
@@ -69,7 +80,7 @@
 <h1>About me</h1>
 <ul>
 <li>Heinrich Göbl</li>
-<li>Day job as JEE programmer at <a href="http://www.agenda-software.de/">AGENDA Software GmbH</a></li>
+<li>IT-Freelancer (Java, JavaScript, Android)</li>
 <li>Focus on Java EE</li>
 <li>I like to play with JavaScript ;-)</li>
 </ul>
@@ -241,6 +252,9 @@
 
 
 </div>
+<script src="/nerdshow/jquery/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="/nerdshow/s5/ui/common/s5.js" type="text/javascript"></script>
+<script src="/nerdshow/hammer/hammer-1.0.6.min.js" type="text/javascript"></script>
 <script>
     window.hijs = '.lang-javascript';
 </script>

@@ -13,7 +13,7 @@
 # About me
 
  * Heinrich Göbl
- * Day job as JEE programmer at [AGENDA Software GmbH](http://www.agenda-software.de/)
+ * IT-Freelancer (Java, JavaScript, Android)
  * Focus on Java EE
  * I like to play with JavaScript ;-)
 
