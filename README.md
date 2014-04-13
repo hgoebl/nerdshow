@@ -23,7 +23,7 @@ This tool will probably only be used by nerds and the presentations will be for 
 The remote control software only works when pages are served by node.js. In this demo you can see only the
 mobile application. It is not connected with a presentation.
 
- * <http://hgoebl.github.com/nerdshow/rt/0.3.0/rc/?/nerdshow>
+ * <http://hgoebl.github.io/nerdshow/rt/0.3.0/rc/?/nerdshow>
 
 ## Generate Presentations
 
