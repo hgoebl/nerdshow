@@ -1,0 +1,58 @@
+@import "../common/common.scss";
+
+@include projection-theme;
+
+@include link-color(#cc9933);
+
+$header_bg: #000055;
+$header_color: #aaaabb;
+
+body {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  background: white url(background.png) -16px 0 no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0.1em 0.1em 0.1em #666666;
+}
+
+#header {
+  background: $header_bg url(background.png) -16px 0 no-repeat;
+  color: $header_color;
+  height: 6.75em;
+}
+
+#footer {
+  background: $header_bg;
+  color: $header_color;
+}
+
+.slide {
+  padding-top: 4em;
+  padding-left: 10%;
+  width: 80%;
+  height: 75%;
+  & > h1 {
+    position: absolute;
+    margin-left: 0.5em;
+    margin-top: -1.5em;
+    color: $header_color;
+  }
+  .current {
+    color: #bb0022;
+  }
+}
+
+#currentSlide {
+  color: $header_color;
+}
+
+#slide1 > h1 {
+  font-size: 2em;
+  position: static;
+  margin-left: 0;
+  margin-top: 1em;
+  color: black;
+}
+

@@ -1,0 +1,37 @@
+code {
+    background-color: white;
+    padding: 0.2em;
+}
+pre > code {
+    border: none;
+    padding: 0.5em;
+    display: block;
+    text-wrap: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    font-size: 75%;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    margin-top: 0.3em;
+
+    /* padding: 20px 20px 2px 20px; */
+    background: #EFEFEF;
+    background: -moz-linear-gradient(top, white 0%, #F4F4F4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,white), color-stop(100%,#F4F4F4));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    /*margin: 0 0 20px 0;*/
+}
+code .keyword { font-weight: bold; color: navy }
+code .string,
+code .regexp { color: green }
+code .class,
+code .special { color: blue }
+code .number { color: #1dc116; }
+code .comment { color: grey }
+
