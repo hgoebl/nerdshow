@@ -15,14 +15,15 @@ This tool will probably only be used by nerds and the presentations will be for 
 
 ### Slides
 
- * <http://hgoebl.github.com/nerdshow>
+ * <http://hgoebl.github.io/nerdshow>
+ * <http://www.goebl.com/slides/>
 
 ### Remote Control
 
 The remote control software only works when pages are served by node.js. In this demo you can see only the
 mobile application. It is not connected with a presentation.
 
- * <http://hgoebl.github.com/nerdshow/rt/rc/remote.html?/nerdshow>
+ * <http://hgoebl.github.com/nerdshow/rt/0.3.0/rc/?/nerdshow>
 
 ## Generate Presentations
 
@@ -32,8 +33,8 @@ mobile application. It is not connected with a presentation.
  * Markdown extension: insert raw html by placing '.' in the first column, e.g. `.</div><div class="slide">`
  * Run generator `nerdshow-generate presentation.json`
  * Run presentation `nerdshow . --debug`
- * Open a html5 browser <http://localhost:8008/>
- * Open remote control <http://localhost:8008/nerdshow/rc/remote.html>
+ * Open an html5 browser <http://localhost:8008/>
+ * Open remote control <http://localhost:8008/nerdshow/rc/>
 
 ## Usage
 
@@ -51,6 +52,15 @@ Options:
 ```
 
 To disable an option, enter `--no-<option>`, e.g. `--no-socketio-enabled`.
+
+If you want to host a presentation on a web-server, you can save space when you
+reference the nerdshow runtime-files:
+
+  * Either hard-wired in you presentation.json file: `"nerdshow-folder": "http://hgoebl.github.io/nerdshow/rt/0.3.0"`
+  * or as a command-line option: `--nerdshow-folder http://hgoebl.github.io/nerdshow/rt/0.3.0`
+
+Be aware that github.io will not serve files over `https` so if your presentation
+is served via https, this won't work.
 
 ### Run Presentation
 
@@ -87,7 +97,7 @@ file system. If you put them in one location, I would install it locally, if not
   * Write some test code
   * Generate impress.js Slides (Positioning slides along paths/patterns)
   * Provide CSS for print (showing all slides and div.class='handout'
-  * Upgrade to Express 3.x
+  * Migrate generation code to [assemble](http://assemble.io/) or provide an assemble plugin
 
 ## License
 
@@ -133,6 +143,7 @@ HTML-based slide shows:
     * <http://www.andismith.com/blog/2012/01/impress-with-impress/>
     * <http://tympanus.net/codrops/2012/04/05/slideshow-with-jmpress-js>
   * <https://github.com/Seldaek/slippy>
+  * <https://github.com/jtrussell/bedecked>
   * <https://github.com/imakewebthings/deck.js>
   * <http://goessner.net/articles/slideous/slideous.html>
   * <https://github.com/hakimel/reveal.js>
