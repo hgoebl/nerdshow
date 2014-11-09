@@ -28,6 +28,21 @@ h1, h2, h3, h4, h5, h6 {
   .current {
     color: #bb0022;
   }
+  h2, h3 {
+    margin-top: 1em;
+  }
+  h1 + h2, h1 + h3 {
+    margin-top: 0;
+  }
+  ul {
+    margin-bottom: 1em;
+  }
+  ul ul {
+    margin-bottom: 0.2em;
+  }
+  li {
+    line-height: 1.4;
+  }
 }
 
 #header {

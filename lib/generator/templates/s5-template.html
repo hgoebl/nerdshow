@@ -17,6 +17,15 @@
             display:block;
             margin:auto;
         }
+        div.more-info {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 50%;
+        }
+        div.more-info ul, div.more-info li {
+            margin-bottom: 0;
+        }
         table.info {
             font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
             margin:auto;
@@ -73,7 +82,7 @@
 
 </div>
 <script src="{{nerdshow_folder}}/jquery/jquery-1.11.0.min.js" type="text/javascript"></script>
-<script src="{{nerdshow_folder}}/hammer/hammer-1.0.6.min.js" type="text/javascript"></script>
+<script src="{{nerdshow_folder}}/hammer/hammer.min.js" type="text/javascript"></script>
 <script src="{{nerdshow_folder}}/s5/ui/common/s5.js" type="text/javascript"></script>
 {{#hijs_enabled}}
 <script>
