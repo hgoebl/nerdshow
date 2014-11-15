@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 6%;
   width: 88%;
   height: 75%;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
   & > h1 {
     position: absolute;
     text-shadow: 0.1em 0.1em 0.1em #333333;
