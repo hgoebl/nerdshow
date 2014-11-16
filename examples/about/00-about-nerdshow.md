@@ -1,5 +1,3 @@
-.<div class="slide">
-
 # Nerdshow
 
 ## HTML-based presentation for Nerds
@@ -8,7 +6,7 @@
 
 #### <https://github.com/hgoebl/nerdshow>
 
-.</div><div class="slide">
+
 
 # About me
 
@@ -22,4 +20,4 @@
 
  * **<http://www.goebl.com>**
 
-.</div>
+

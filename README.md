@@ -85,19 +85,19 @@ file system. If you put them in one location, I would install it locally, if not
 
 ## TODO / Bugs
 
+  * Provide a boilerplate/template for new presentation (nerdshow-create)
+  * Provide CSS for print (showing all slides and div.class='handout'
+  * Add support for SyntaxHighlighter (from Alex Gorbatschev)
+  * Migrate generation code to [assemble](http://assemble.io/) or provide an assemble plugin
+  * Provide grunt plugin (and gulp.js)
   * When zooming (Ctrl+Click Source-Code) all images disappear (background + img)
   * HowTo documentation + enhance example
-  * Provide a boilerplate/template for new presentation (nerdshow-create)
   * Implement/Test incremental page updates (ul/li elements coming item by item)
-  * Switch to Full-Screen-Mode when presentation starts (or when pressing F5)
   * Isolate different presentations delivered by the same server
   * Generate a QR-Code for the remote control URL
-  * Add support for SyntaxHighlighter (from Alex Gorbatschev)
   * Output error message when used with IE <= 9
   * Write some test code
   * Generate impress.js Slides (Positioning slides along paths/patterns)
-  * Provide CSS for print (showing all slides and div.class='handout'
-  * Migrate generation code to [assemble](http://assemble.io/) or provide an assemble plugin
 
 ## License
 

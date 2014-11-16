@@ -1,4 +1,3 @@
-.<div class="slide">
 
 # Some Bullets (Source)
 
@@ -11,7 +10,6 @@
  * Sed cursus `ante` dapibus diam
 ```
 
-.</div><div class="slide">
 
 # Some Bullets
 
@@ -22,7 +20,7 @@
    * Praesent libero
  * Sed cursus `ante` dapibus diam
 
-.</div><div class="slide">
+
 
 # JavaScript Source
 
@@ -39,7 +37,7 @@ var obj = {
 };
 ```
 
-.</div><div class="slide">
+
 
 # A Table (Source)
 
@@ -58,7 +56,7 @@ var obj = {
 </table>
 ```
 
-.</div><div class="slide">
+
 
 # A Table
 
@@ -75,7 +73,7 @@ var obj = {
 </tbody>
 </table>
 
-.</div><div class="slide">
+
 
 # Centered Image (Source)
 
@@ -83,10 +81,10 @@ var obj = {
 <img src="media/questions.jpg" class="scaled-centered">
 ```
 
-.</div><div class="slide">
+
 
 # Centered Image
 
 <img src="media/questions.jpg" class="scaled-centered">
 
-.</div>
+
