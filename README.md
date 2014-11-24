@@ -23,7 +23,7 @@ This tool will probably only be used by nerds and the presentations will be for 
 The remote control software only works when pages are served by node.js. In this demo you can see only the
 mobile application. It is not connected with a presentation.
 
- * <http://hgoebl.github.io/nerdshow/rt/0.3.0/rc/?/nerdshow>
+ * <http://hgoebl.github.io/nerdshow/rt/0.4.0/rc/?/nerdshow>
 
 ## Generate Presentations
 
@@ -31,6 +31,7 @@ mobile application. It is not connected with a presentation.
  * Edit presentation.json
  * add Markdown and/or html files and add them to presentation.json (slides array)
  * Markdown extension: insert raw html by placing '.' in the first column, e.g. `.</div><div class="slide">`
+ * Since v0.4.0: `<div class="slide">` are generated automatically by runtime (from `<h1>` until next `<h1>`)
  * Run generator `nerdshow-generate presentation.json`
  * Run presentation `nerdshow . --debug`
  * Open an html5 browser <http://localhost:8008/>
@@ -56,8 +57,8 @@ To disable an option, enter `--no-<option>`, e.g. `--no-socketio-enabled`.
 If you want to host a presentation on a web-server, you can save space when you
 reference the nerdshow runtime-files:
 
-  * Either hard-wired in you presentation.json file: `"nerdshow-folder": "http://hgoebl.github.io/nerdshow/rt/0.3.0"`
-  * or as a command-line option: `--nerdshow-folder http://hgoebl.github.io/nerdshow/rt/0.3.0`
+  * Either hard-wired in you presentation.json file: `"nerdshow-folder": "http://hgoebl.github.io/nerdshow/rt/0.4.0"`
+  * or as a command-line option: `--nerdshow-folder http://hgoebl.github.io/nerdshow/rt/0.4.0`
 
 Be aware that github.io will not serve files over `https` so if your presentation
 is served via https, this won't work.

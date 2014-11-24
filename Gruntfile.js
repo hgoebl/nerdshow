@@ -55,7 +55,7 @@ module.exports = function(grunt) {
                     {   // examples
                         expand: true,
                         cwd: 'examples/about',
-                        src: ['**', '!*.md'],
+                        src: ['**', '!*.md', '!20-*.html'],
                         dest: '<%= ghPagesDir %>/'
                     }
                 ]
