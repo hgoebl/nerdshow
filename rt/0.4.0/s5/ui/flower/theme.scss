@@ -1,0 +1,51 @@
+@import "../common/common.scss";
+
+@include projection-theme;
+
+@include link-color(#4a040a);
+
+body {
+  font-family: georgia, times, "Times New Roman", serif;
+  background: white url(flower.jpg) no-repeat;
+  color: #222222;
+}
+
+#header, #footer {
+  background: transparent;
+  color: #ba9384;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+#footer {
+  border-top: 1px solid #999999;
+  background: #fff0cf;
+}
+
+.slide {
+  top: 20%;
+  width: 80%;
+  height: 75%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: transparent url(flowerright.jpg) right top no-repeat;
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: -1.5em;
+    position: absolute;
+    color: #4a040a;
+    font-family: georgia, times, "Times New Roman", serif;
+  }
+}
+
+#currentSlide {
+  color: #646587;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#slide1 {
+  & > h1, & > h2, & > h3, & > h4, & > h5, & > h6 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: static;
+  }
+}

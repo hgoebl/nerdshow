@@ -9,7 +9,7 @@
     <meta name="company" content="www.goebl.com"/>
     <!-- extensions -->
     <meta name="transitions" content="yes"/>
-    <link rel="stylesheet" href="rt/0.3.0/s5/ui/advanced/theme.css" type="text/css" title="advanced" media="screen"/>
+    <link rel="stylesheet" href="rt/0.4.0/s5/ui/advanced/theme.css" type="text/css" title="advanced" media="screen"/>
     <style>
         img.scaled-centered {
             max-width:100%;
@@ -44,7 +44,7 @@
             width: 100%;
             height: 100%;
             z-index: 9999;
-            background-image: url('rt/0.3.0/s5/ui/default/preloaders.gif');
+            background-image: url('rt/0.4.0/s5/ui/default/preloaders.gif');
             background-repeat:no-repeat;
             background-position: center center;
         }
@@ -52,6 +52,8 @@
             display: none;
         }
     </style>
+    <script src="rt/0.4.0/jquery/jquery-1.11.0.min.js" type="text/javascript"></script>
+    
 </head>
 <body>
 <div id="loading"></div>
@@ -69,14 +71,10 @@
 </div>
 <div class="presentation">
 
-    <div class="slide">
-
-<h1>Nerdshow</h1>
+    <h1>Nerdshow</h1>
 <h2>HTML-based presentation for Nerds</h2>
 <h3>Heinrich Göbl</h3>
 <h4><a href="https://github.com/hgoebl/nerdshow">https://github.com/hgoebl/nerdshow</a></h4>
-</div><div class="slide">
-
 <h1>About me</h1>
 <ul>
 <li>Heinrich Göbl</li>
@@ -91,9 +89,6 @@
 <ul>
 <li><strong><a href="http://www.goebl.com">http://www.goebl.com</a></strong></li>
 </ul>
-</div>
-
-<div class="slide">
 
 <h1>Some Bullets (Source)</h1>
 <pre><code> * Lorem ipsum
@@ -102,8 +97,6 @@
    * Integer nec odio
    * Praesent libero
  * Sed cursus `ante` dapibus diam</code></pre>
-</div><div class="slide">
-
 <h1>Some Bullets</h1>
 <ul>
 <li>Lorem ipsum</li>
@@ -115,8 +108,6 @@
 </li>
 <li>Sed cursus <code>ante</code> dapibus diam</li>
 </ul>
-</div><div class="slide">
-
 <h1>JavaScript Source</h1>
 <pre><code class="lang-javascript">var obj = {
     name: &quot;String&quot;,
@@ -128,8 +119,6 @@
     },
     lines: [ 1, 2, &quot;abc&quot; ]
 };</code></pre>
-</div><div class="slide">
-
 <h1>A Table (Source)</h1>
 <pre><code>&lt;table class=&quot;info&quot;&gt;
 &lt;thead&gt;
@@ -143,8 +132,6 @@
 &lt;tr&gt;&lt;td&gt;Partition&lt;/td&gt;&lt;td&gt;Shard&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-</div><div class="slide">
-
 <h1>A Table</h1>
 <table class="info">
 <thead>
@@ -159,110 +146,101 @@
 </tbody>
 </table>
 
-</div><div class="slide">
+
 
 <h1>Centered Image (Source)</h1>
 <pre><code>&lt;img src=&quot;media/questions.jpg&quot; class=&quot;scaled-centered&quot;&gt;</code></pre>
-</div><div class="slide">
-
 <h1>Centered Image</h1>
 <p><img src="media/questions.jpg" class="scaled-centered">
 
+
 </p>
-</div>
 
-<div class="slide">
-	<h1>Embedded SVGs</h1>
-	<svg
-	   xmlns='http://www.w3.org/2000/svg'
-	   xml:space='preserve'
-	   xmlns:xlink='http://www.w3.org/1999/xlink'
-	   width='10em'
-	   height='10em'
-	   viewBox='0 0 600 600'>
-	  <title>SVG Icon Full</title>
-	  <desc>Designed for the SVG Logo Contest in 2006 by Harvey Rayner. It is available under the Creative Commons license for those who have an SVG product or who are using SVG on their site.</desc>
-	  <metadata>
-	    <title>Creative Commons License</title>
-	  </metadata>
-	  <defs>
-	    <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="300" y1="600.001" x2="300" y2="0">
-	      <stop offset="0" stop-color="#EDA921"/>
-	      <stop offset="0.501961" stop-color="#EDA921"/>
-	      <stop offset="0.819608" stop-color="#C58B18"/>
-	      <stop offset="1" stop-color="#785206"/>
-	    </linearGradient>
-	    <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="300.247" y1="585.416" x2="300.247" y2="352.174">
-	      <stop offset="0" stop-color="white"/>
-	      <stop offset="0.458824" stop-color="#EDA921"/>
-	      <stop offset="0.901961" stop-color="black"/>
-	      <stop offset="1" stop-color="black"/>
-	    </linearGradient>
-	    <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="300" y1="553.421" x2="300" y2="300">
-	      <stop offset="0" stop-color="#FFE4AD"/>
-	      <stop offset="0.0784314" stop-color="#EDA921"/>
-	      <stop offset="0.231373" stop-color="#5E4107"/>
-	      <stop offset="1" stop-color="#2E1F02"/>
-	    </linearGradient>
-	    <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="300" y1="466.035" x2="300" y2="314.27">
-	      <stop offset="0" stop-color="#C4A058"/>
-	      <stop offset="0.54902" stop-color="#EDA921"/>
-	      <stop offset="1" stop-color="#FFE9BD"/>
-	    </linearGradient>
-	  </defs>
-	  <g>
-	    <rect id="background" fill="url(#id0)" x="0" y="0" width="600" height="600"/>
-	    <g id="node_outline" fill="#000000">
-	      <circle cx="300" cy="300" r="167" />
-	      <circle cx="157.292" cy="157.293" r="83.5969" />
-	      <circle cx="300" cy="98.1819" r="83.5969" />
-	      <circle cx="442.708" cy="157.293" r="83.5969" />
-	      <circle cx="501.819" cy="300" r="83.5954" />
-	      <circle cx="98.1806" cy="300" r="83.5965" />
-	    </g>
-	    <rect id="bottom_grad" fill="url(#id1)" x="39.0699" y="352.175" width="522.353" height="233.242"/>
-	    <g id="connectors" stroke="#ffffff" fill="none" stroke-width="63.9924">
-	      <line x1="300" y1="98.1819" x2="300" y2= "300" />
-	      <line x1="157.292" y1="157.294" x2="300" y2= "300" />
-	      <line x1="442.707" y1="157.293" x2="300" y2= "300" />
-	    </g>
-	    <g id="nodes" fill="#ffffff">
-	      <circle cx="300" cy="98.18" r="45.25" />
-	      <circle cx="442.71" cy="157.29" r="45.25" />
-	      <circle cx="501.82" cy="300" r="45.25" />
-	      <circle cx="98.18" cy="300" r="45.25" />
-	      <circle cx="157.29" cy="157.29" r="45.25" />
-	    </g>
-	    <rect id="svg_textbox_outline" fill="white" x="66.1848" y="268.004" width="467.63" height="317.413"/>
-	    <rect id="svg_textbox_background" fill="url(#id2)" x="98.1806" y="300" width="403.639" height="253.42"/>
-	    <path id="svg_textbox_reflection" fill="url(#id3)" d="M134.812 314.271l330.377 0c12.2989,0 22.3595,10.0619 22.3595,22.3595l0 114.354c-126.726,15.0508 -226.373,-60.325 -358.995,-60.325 -5.39175,0 -10.7563,0.0921263 -16.102,0.250395l0 -54.279c0,-12.2977 10.0619,-22.3595 22.3607,-22.3595z"/>
-	    <path id="svg_text" fill="#ffffff" d="M356.999 333.984l-40.3076 194.65 -33.397 0 -40.3112 -194.65 33.4041 0 23.5997 114.003 23.608 -114.003 33.4041 0zm57.0179 80.6318l57.012 0 0 57.0038 0.00944886 0c0,31.4871 -25.5273,57.0144 -57.0144,57.0144 -31.4824,0 -57.0097,-25.5273 -57.0179,-57.0085l0 -0.00590554 0 -80.6188 -0.00708664 0c0,-31.4836 25.5355,-57.0168 57.0179,-57.0168 31.4836,0 57.012,25.5332 57.012,57.0168l-33.4029 0c0,-13.0335 -10.5685,-23.6056 -23.6091,-23.6056 -13.0323,0 -23.6032,10.5721 -23.6032,23.6056l0 80.6247c0.00354332,13.0288 10.5745,23.5985 23.6032,23.5985 13.0406,0 23.6091,-10.5603 23.6091,-23.5926l0 -0.0118111 0 -23.5973 -23.6091 0 0 -33.4064zm-23.6032 57.0097l0 0zm-244.754 -40.3147c-10.3122,-10.3205 -16.6985,-24.5741 -16.6985,-40.3147 0,-31.4789 25.5344,-57.012 57.0132,-57.012 31.4812,0 57.0085,25.5332 57.0085,57.012l-33.3958 0c0,-13.0441 -10.5745,-23.6151 -23.6127,-23.6151 -13.043,0 -23.6186,10.5709 -23.6186,23.6151 0,6.51617 2.63977,12.4123 6.90593,16.6867l0.01063 0c4.27325,4.27915 10.1776,6.92247 16.702,6.92247l0 0.00472443c15.7383,0 29.9919,6.38625 40.31,16.702l0 0c10.3146,10.3182 16.6985,24.5706 16.6985,40.3135 0,31.4812 -25.5273,57.0085 -57.0085,57.0085 -31.4789,0 -57.0132,-25.5273 -57.0132,-57.0085l33.3946 0c0,13.0382 10.5756,23.6127 23.6186,23.6127 13.0382,0 23.6127,-10.5745 23.6127,-23.6127 0,-6.51735 -2.63859,-12.4123 -6.90475,-16.6879l-0.0165355 0c-4.2697,-4.27679 -10.1717,-6.92365 -16.6914,-6.92365l0 0c-15.743,0 -29.9954,-6.38861 -40.3147,-16.7032l0 0z"/>
-	  </g>
-	</svg>
-</div>
-
-
-<div class="slide">
+<h1>Embedded SVGs</h1>
+<svg
+   xmlns='http://www.w3.org/2000/svg'
+   xml:space='preserve'
+   xmlns:xlink='http://www.w3.org/1999/xlink'
+   width='10em'
+   height='10em'
+   viewBox='0 0 600 600'>
+  <title>SVG Icon Full</title>
+  <desc>Designed for the SVG Logo Contest in 2006 by Harvey Rayner. It is available under the Creative Commons license for those who have an SVG product or who are using SVG on their site.</desc>
+  <metadata>
+	<title>Creative Commons License</title>
+  </metadata>
+  <defs>
+	<linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="300" y1="600.001" x2="300" y2="0">
+	  <stop offset="0" stop-color="#EDA921"/>
+	  <stop offset="0.501961" stop-color="#EDA921"/>
+	  <stop offset="0.819608" stop-color="#C58B18"/>
+	  <stop offset="1" stop-color="#785206"/>
+	</linearGradient>
+	<linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="300.247" y1="585.416" x2="300.247" y2="352.174">
+	  <stop offset="0" stop-color="white"/>
+	  <stop offset="0.458824" stop-color="#EDA921"/>
+	  <stop offset="0.901961" stop-color="black"/>
+	  <stop offset="1" stop-color="black"/>
+	</linearGradient>
+	<linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="300" y1="553.421" x2="300" y2="300">
+	  <stop offset="0" stop-color="#FFE4AD"/>
+	  <stop offset="0.0784314" stop-color="#EDA921"/>
+	  <stop offset="0.231373" stop-color="#5E4107"/>
+	  <stop offset="1" stop-color="#2E1F02"/>
+	</linearGradient>
+	<linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="300" y1="466.035" x2="300" y2="314.27">
+	  <stop offset="0" stop-color="#C4A058"/>
+	  <stop offset="0.54902" stop-color="#EDA921"/>
+	  <stop offset="1" stop-color="#FFE9BD"/>
+	</linearGradient>
+  </defs>
+  <g>
+	<rect id="background" fill="url(#id0)" x="0" y="0" width="600" height="600"/>
+	<g id="node_outline" fill="#000000">
+	  <circle cx="300" cy="300" r="167" />
+	  <circle cx="157.292" cy="157.293" r="83.5969" />
+	  <circle cx="300" cy="98.1819" r="83.5969" />
+	  <circle cx="442.708" cy="157.293" r="83.5969" />
+	  <circle cx="501.819" cy="300" r="83.5954" />
+	  <circle cx="98.1806" cy="300" r="83.5965" />
+	</g>
+	<rect id="bottom_grad" fill="url(#id1)" x="39.0699" y="352.175" width="522.353" height="233.242"/>
+	<g id="connectors" stroke="#ffffff" fill="none" stroke-width="63.9924">
+	  <line x1="300" y1="98.1819" x2="300" y2= "300" />
+	  <line x1="157.292" y1="157.294" x2="300" y2= "300" />
+	  <line x1="442.707" y1="157.293" x2="300" y2= "300" />
+	</g>
+	<g id="nodes" fill="#ffffff">
+	  <circle cx="300" cy="98.18" r="45.25" />
+	  <circle cx="442.71" cy="157.29" r="45.25" />
+	  <circle cx="501.82" cy="300" r="45.25" />
+	  <circle cx="98.18" cy="300" r="45.25" />
+	  <circle cx="157.29" cy="157.29" r="45.25" />
+	</g>
+	<rect id="svg_textbox_outline" fill="white" x="66.1848" y="268.004" width="467.63" height="317.413"/>
+	<rect id="svg_textbox_background" fill="url(#id2)" x="98.1806" y="300" width="403.639" height="253.42"/>
+	<path id="svg_textbox_reflection" fill="url(#id3)" d="M134.812 314.271l330.377 0c12.2989,0 22.3595,10.0619 22.3595,22.3595l0 114.354c-126.726,15.0508 -226.373,-60.325 -358.995,-60.325 -5.39175,0 -10.7563,0.0921263 -16.102,0.250395l0 -54.279c0,-12.2977 10.0619,-22.3595 22.3607,-22.3595z"/>
+	<path id="svg_text" fill="#ffffff" d="M356.999 333.984l-40.3076 194.65 -33.397 0 -40.3112 -194.65 33.4041 0 23.5997 114.003 23.608 -114.003 33.4041 0zm57.0179 80.6318l57.012 0 0 57.0038 0.00944886 0c0,31.4871 -25.5273,57.0144 -57.0144,57.0144 -31.4824,0 -57.0097,-25.5273 -57.0179,-57.0085l0 -0.00590554 0 -80.6188 -0.00708664 0c0,-31.4836 25.5355,-57.0168 57.0179,-57.0168 31.4836,0 57.012,25.5332 57.012,57.0168l-33.4029 0c0,-13.0335 -10.5685,-23.6056 -23.6091,-23.6056 -13.0323,0 -23.6032,10.5721 -23.6032,23.6056l0 80.6247c0.00354332,13.0288 10.5745,23.5985 23.6032,23.5985 13.0406,0 23.6091,-10.5603 23.6091,-23.5926l0 -0.0118111 0 -23.5973 -23.6091 0 0 -33.4064zm-23.6032 57.0097l0 0zm-244.754 -40.3147c-10.3122,-10.3205 -16.6985,-24.5741 -16.6985,-40.3147 0,-31.4789 25.5344,-57.012 57.0132,-57.012 31.4812,0 57.0085,25.5332 57.0085,57.012l-33.3958 0c0,-13.0441 -10.5745,-23.6151 -23.6127,-23.6151 -13.043,0 -23.6186,10.5709 -23.6186,23.6151 0,6.51617 2.63977,12.4123 6.90593,16.6867l0.01063 0c4.27325,4.27915 10.1776,6.92247 16.702,6.92247l0 0.00472443c15.7383,0 29.9919,6.38625 40.31,16.702l0 0c10.3146,10.3182 16.6985,24.5706 16.6985,40.3135 0,31.4812 -25.5273,57.0085 -57.0085,57.0085 -31.4789,0 -57.0132,-25.5273 -57.0132,-57.0085l33.3946 0c0,13.0382 10.5756,23.6127 23.6186,23.6127 13.0382,0 23.6127,-10.5745 23.6127,-23.6127 0,-6.51735 -2.63859,-12.4123 -6.90475,-16.6879l-0.0165355 0c-4.2697,-4.27679 -10.1717,-6.92365 -16.6914,-6.92365l0 0c-15.743,0 -29.9954,-6.38861 -40.3147,-16.7032l0 0z"/>
+  </g>
+</svg>
 
 <h1>Questions?</h1>
 <p><img src="media/questions.jpg" class="scaled-centered">
 
 </p>
-</div>
 
 
 </div>
-<script src="rt/0.3.0/jquery/jquery-1.11.0.min.js" type="text/javascript"></script>
-<script src="rt/0.3.0/hammer/hammer-1.0.6.min.js" type="text/javascript"></script>
-<script src="rt/0.3.0/s5/ui/common/s5.js" type="text/javascript"></script>
+<script src="rt/0.4.0/hammer/hammer.min.js" type="text/javascript"></script>
+<script src="rt/0.4.0/s5/ui/common/s5.js" type="text/javascript"></script>
 <script>
     window.hijs = '.lang-javascript';
 </script>
-<script src="rt/0.3.0/hijs/hijs.js"></script>
+<script src="rt/0.4.0/hijs/hijs.js"></script>
 <script>
 
     $(function () {
-        $('<link rel="stylesheet" type="text/css" href="rt/0.3.0/hijs/my-hijs.css"/>').appendTo('head');
+        $('<link rel="stylesheet" type="text/css" href="rt/0.4.0/hijs/my-hijs.css"/>').appendTo('head');
     });
 
 </script>
