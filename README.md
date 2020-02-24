@@ -115,6 +115,7 @@ To run ```nerdshow-generate```, use the ```--entrypoint``` Docker command line s
   * Output error message when used with IE <= 9
   * Write some test code
   * Generate impress.js Slides (Positioning slides along paths/patterns)
+  * Enable building of ready-to-run Docker images baking your own built-in presentations
 
 ## License
 
