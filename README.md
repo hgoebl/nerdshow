@@ -84,6 +84,22 @@ file system. If you put them in one location, I would install it locally, if not
 
     npm install nerdshow [-g]
 
+## Docker
+nerdshow features Docker support. You can build and run nerdshow using Docker.
+
+### Develop & Build
+A Dockerfile is included to allow you to develop and build nerdshow using standard Docker workflow.
+
+#### Build from current source:
+```docker build -t nerdshow .```
+
+#### Run built image:
+```docker run --rm -it -p 8008:8008 nerdshow [options...]```
+
+The defined entrypoint invokes ```bin/nerdshow-run``` by default. If no options are provided, the above command will serve the ```examples``` folder.
+
+To run ```nerdshow-generate```, use the ```--entrypoint``` Docker command line switch.
+
 ## TODO / Bugs
 
   * Provide a boilerplate/template for new presentation (nerdshow-create)
